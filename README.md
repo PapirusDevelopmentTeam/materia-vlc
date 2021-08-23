@@ -9,6 +9,13 @@
   <img src="https://raw.githubusercontent.com/PapirusDevelopmentTeam/materia-vlc/main/preview.png" alt="preview"/>
 </p>
 
+## Features
+
+- minimalistic design
+- built-in playlist
+- show cover for audio files (with double click show file info)
+- resizable (right bottom angle)
+
 ## Download
 
 https://www.pling.com/p/1580017/
