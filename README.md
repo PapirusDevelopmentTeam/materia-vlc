@@ -1,6 +1,8 @@
 <h1 align="center">
 	<img src="logo.png" alt="Materia VLC skin" width="96" height="96"/><br>
  Materia VLC skin
+</h1>
+
 <p align="center"><strong>A Materia skin for VLC</strong></p>
 
 ![Preview of the theme](preview.png)
