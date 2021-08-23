@@ -5,7 +5,9 @@
 
 <p align="center"><strong>A Materia skin for VLC</strong></p>
 
-![Preview of the theme](preview.png)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/PapirusDevelopmentTeam/materia-vlc/main/preview.png" alt="preview"/>
+</p>
 
 ## Download
 
