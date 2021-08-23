@@ -1,0 +1,191 @@
+<!DOCTYPE Theme PUBLIC "-//VideoLAN//DTD VLC Skins V2.0//EN" "skin.dtd">
+<Theme version="2.0">
+  <ThemeInfo name="Materia" author="Alexey Varfolomeev" email="varlesh@gmail.com" webpage="https://github.com/varlesh"/>
+
+  <!-- Created using the VLC Skin Editor 0.8.6.dev (http://www.videolan.org/vlc/skineditor.html)-->
+
+  <Bitmap id="play" file="play.png" alphacolor="#FF00FF"/>
+  <Bitmap id="pause" file="pause.png" alphacolor="#FF00FF"/>
+  <Bitmap id="next" file="next.png" alphacolor="#FF00FF"/>
+  <Bitmap id="positionbg" file="positionbg.png" alphacolor="#FF00FF"/>
+  <Bitmap id="positiongrip" file="positiongrip.png" alphacolor="#FF00FF"/>
+  <Bitmap id="positiongrip2" file="positiongrip2.png" alphacolor="#FF00FF"/>
+  <Bitmap id="positiongrip3" file="positiongrip3.png" alphacolor="#FF00FF"/>
+  <Bitmap id="resize" file="resize.png" alphacolor="#FF00FF"/>
+  <Bitmap id="slider" file="slider.png" alphacolor="#FF00FF"/>
+  <Bitmap id="vol" file="vol.png" alphacolor="#FF00FF"/>
+  <Bitmap id="close" file="close.png" alphacolor="#FF00FF"/>
+  <Bitmap id="close2" file="close2.png" alphacolor="#FF00FF"/>
+  <Bitmap id="close3" file="close3.png" alphacolor="#FF00FF"/>
+  <Bitmap id="max" file="max.png" alphacolor="#FF00FF"/>
+  <Bitmap id="max2" file="max2.png" alphacolor="#FF00FF"/>
+  <Bitmap id="max3" file="max3.png" alphacolor="#FF00FF"/>
+  <Bitmap id="min" file="min.png" alphacolor="#FF00FF"/>
+  <Bitmap id="min2" file="min2.png" alphacolor="#FF00FF"/>
+  <Bitmap id="min3" file="min3.png" alphacolor="#FF00FF"/>
+  <Bitmap id="mins" file="mins.png" alphacolor="#FF00FF"/>
+  <Bitmap id="mins2" file="mins2.png" alphacolor="#FF00FF"/>
+  <Bitmap id="mins3" file="mins3.png" alphacolor="#FF00FF"/>
+  <Bitmap id="prev" file="prev.png" alphacolor="#FF00FF"/>
+  <Bitmap id="play2" file="play2.png" alphacolor="#FF00FF"/>
+  <Bitmap id="play3" file="play3.png" alphacolor="#FF00FF"/>
+  <Bitmap id="next2" file="next2.png" alphacolor="#FF00FF"/>
+  <Bitmap id="next3" file="next3.png" alphacolor="#FF00FF"/>
+  <Bitmap id="pause2" file="pause2.png" alphacolor="#FF00FF"/>
+  <Bitmap id="pause3" file="pause3.png" alphacolor="#FF00FF"/>
+  <Bitmap id="prev2" file="prev2.png" alphacolor="#FF00FF"/>
+  <Bitmap id="prev3" file="prev3.png" alphacolor="#FF00FF"/>
+  <Bitmap id="vol2" file="vol2.png" alphacolor="#FF00FF"/>
+  <Bitmap id="vol3" file="vol3.png" alphacolor="#FF00FF"/>
+  <Bitmap id="icon" file="icon.png" alphacolor="#FF00FF"/>
+  <Bitmap id="bg-fs" file="bg-fs.png" alphacolor="#FF00FF"/>
+  <Bitmap id="bg-time-slider" file="bg-time-slider.png" alphacolor="#FF00FF"/>
+  <Bitmap id="bg-bottom" file="bg-bottom.png" alphacolor="#FF00FF"/>
+  <Bitmap id="playlist" file="playlist.png" alphacolor="#FF00FF"/>
+  <Bitmap id="playlist2" file="playlist2.png" alphacolor="#FF00FF"/>
+  <Bitmap id="playlist3" file="playlist3.png" alphacolor="#FF00FF"/>
+  <Bitmap id="bg-playlist" file="bg-playlist.png" alphacolor="#FF00FF"/>
+  <Bitmap id="pl_buttons" file="pl_buttons.png" alphacolor="#FF00FF">
+    <SubBitmap id="plus1" x="0" y="0" height="32" width="32"/>
+    <SubBitmap id="plus2" x="0" y="32" height="32" width="32"/>
+    <SubBitmap id="plus3" x="0" y="64" height="32" width="32"/>
+    <SubBitmap id="minus1" x="32" y="0" height="32" width="32"/>
+    <SubBitmap id="minus2" x="32" y="32" height="32" width="32"/>
+    <SubBitmap id="minus3" x="32" y="64" height="32" width="32"/>
+    <SubBitmap id="up1" x="64" y="0" height="32" width="32"/>
+    <SubBitmap id="up2" x="64" y="32" height="32" width="32"/>
+    <SubBitmap id="up3" x="64" y="64" height="32" width="32"/>
+    <SubBitmap id="down1" x="96" y="0" height="32" width="32"/>
+    <SubBitmap id="down2" x="96" y="32" height="32" width="32"/>
+    <SubBitmap id="down3" x="96" y="64" height="32" width="32"/>
+    <SubBitmap id="repeat1" x="128" y="0" height="32" width="32"/>
+    <SubBitmap id="repeat2" x="128" y="32" height="32" width="32"/>
+    <SubBitmap id="repeat3" x="128" y="64" height="32" width="32"/>
+    <SubBitmap id="shuffle1" x="160" y="0" height="32" width="32"/>
+    <SubBitmap id="shuffle2" x="160" y="32" height="32" width="32"/>
+    <SubBitmap id="shuffle3" x="160" y="64" height="32" width="32"/>
+    <SubBitmap id="shuffle-on" x="192" y="32" height="32" width="32"/>
+    <SubBitmap id="repeat-on" x="192" y="64" height="32" width="32"/>
+  </Bitmap>
+  <Bitmap id="mute" file="mute.png" alphacolor="#FF00FF"/>
+  <Bitmap id="mute2" file="mute2.png" alphacolor="#FF00FF"/>
+  <Bitmap id="mute3" file="mute3.png" alphacolor="#FF00FF"/>
+  <Bitmap id="fullscreen" file="fullscreen.png" alphacolor="#FF00FF"/>
+  <Bitmap id="fullscreen2" file="fullscreen2.png" alphacolor="#FF00FF"/>
+  <Bitmap id="fullscreen3" file="fullscreen3.png" alphacolor="#FF00FF"/>
+  <Bitmap id="bg-video" file="bg-video.png" alphacolor="#FF00FF"/>
+  <Font id="roboto" file="roboto.ttf" size="20"/>
+  <Font id="notosansreg" file="notosansreg.ttf" size="13"/>
+  <Bitmap id="border" file="border.png" alphacolor="#FF00FF"/>
+  <Bitmap id="border-top" file="border-top.png" alphacolor="#FF00FF"/>
+  <Bitmap id="bg-video-2" file="bg-video-2.png" alphacolor="#FF00FF"/>
+  <Bitmap id="restore" file="restore.png" alphacolor="#FF00FF"/>
+  <Bitmap id="restore2" file="restore2.png" alphacolor="#FF00FF"/>
+  <Bitmap id="restore3" file="restore3.png" alphacolor="#FF00FF"/>
+  <Bitmap id="bg-time-slider-fs" file="bg-time-slider-fs.png" alphacolor="#FF00FF"/>
+
+  <Window id="Player">
+    <Layout id="Main_pl" width="720" height="469" maxwidth="9999" maxheight="9999">
+      <Image id="panel_pl" y="405" image="bg-bottom" action="move" resize="scale" lefttop="leftbottom" rightbottom="rightbottom"/>
+      <Video id="video_pl" width="480" height="405" rightbottom="rightbottom"/>
+      <Image id="background_pl" image="bg-video" resize="scale" rightbottom="rightbottom"/>
+      <Text text="$N" font="roboto" alignment="center" color="#dfdfdf" id="Artist_pl" x="4" y="47" width="472" rightbottom="righttop"/>
+      <Panel id="logo_pl" x="4" y="113" width="472" height="200" rightbottom="rightbottom" ykeepratio="true">
+        <Image id="LogoVLC_pl" x="136" image="icon" art="true" action2="dialogs.fileInfo()" resize="scale2" rightbottom="rightbottom"/>
+      </Panel>
+      <Panel id="Bottom Left_pl" y="405" width="108" height="64" rightbottom="leftbottom" xkeepratio="true" ykeepratio="true">
+        <Button up="prev" down="prev3" over="prev2" action="playlist.previous()" id="previous_pl" x="4" y="16"/>
+        <Checkbox state="vlc.isPlaying" up1="play" up2="pause" down1="play3" down2="pause3" over1="play2" over2="pause2" action1="vlc.play()" action2="vlc.pause()" id="play/pause_pl" x="40" y="16" xkeepratio="true" ykeepratio="true"/>
+        <Button up="next" down="next3" over="next2" action="playlist.next()" id="next_pl" x="76" y="16"/>
+      </Panel>
+      <Panel id="Time Slider_pl" x="115" y="405" width="362" height="64" lefttop="leftbottom" rightbottom="rightbottom" ykeepratio="true">
+        <Text text="$t" font="notosansreg" alignment="center" color="#FFFFFF" id="Current time_pl" y="22" width="56" rightbottom="leftbottom" visible="vlc.isPlaying or vlc.hasAudio or vlc.hasVout"/>
+        <Slider id="Time slider_pl" x="56" y="31" points="(0,2),(250,2)" thickness="0" value="time" tooltiptext="" up="positiongrip" down="positiongrip3" over="positiongrip2" rightbottom="rightbottom" ykeepratio="true">
+          <SliderBackground id="TimeSliderBackground_pl" image="bg-time-slider" nbvert="250"/>
+        </Slider>
+        <Text text="$d" font="notosansreg" alignment="center" color="#FFFFFF" id="Total time_pl" x="304" y="22" width="56" lefttop="righttop" rightbottom="rightbottom" visible="vlc.isPlaying or vlc.hasAudio or vlc.hasVout"/>
+      </Panel>
+      <Panel id="Bottom Right_pl" x="480" y="405" width="240" height="64" lefttop="righttop" rightbottom="rightbottom" xkeepratio="true" ykeepratio="true">
+        <Checkbox state="vlc.isMute" up1="vol" up2="mute" down1="vol3" down2="mute3" over1="vol2" over2="mute2" action1="vlc.mute()" action2="vlc.mute()" id="Mute_pl" x="4" y="16"/>
+        <Button up="playlist" down="playlist3" over="playlist2" action="Player.setLayout(Main)" id="Playlist_pl" x="36" y="16"/>
+        <Button up="fullscreen" down="fullscreen3" over="fullscreen2" action="vlc.fullscreen()" id="FullscreenButton_pl" x="68" y="16"/>
+        <Button up="mins" down="mins3" over="mins2" action="vlc.minimize()" id="Mins_pl" x="136" y="16"/>
+        <Checkbox state="Player.isMaximized" up1="max" up2="max" down1="max3" down2="max3" over1="max2" over2="max2" action1="Player.maximize()" action2="Player.unmaximize()" id="Maximize_pl" x="168" y="16"/>
+        <Button up="close" down="close3" over="close2" action="vlc.quit()" id="Close_pl" x="204" y="16"/>
+      </Panel>
+      <Panel id="PlaylistPanel_pl" x="480" width="240" height="405" lefttop="righttop" rightbottom="rightbottom">
+        <Image id="PlaylistBackground_pl" image="bg-playlist" lefttop="righttop" rightbottom="rightbottom"/>
+        <Button up="plus1" down="plus3" over="plus2" action="playlist.add()" id="p1_pl" x="4" y="369" lefttop="rightbottom" rightbottom="rightbottom"/>
+        <Button up="minus1" down="minus3" over="minus2" action="playlist.del()" id="p2_pl" x="36" y="369" lefttop="rightbottom" rightbottom="rightbottom"/>
+        <Button up="up1" down="up3" over="up2" action="playlist.load()" id="p3_pl" x="68" y="369" lefttop="rightbottom" rightbottom="rightbottom"/>
+        <Button up="down1" down="down3" over="down2" action="playlist.save()" id="p4_pl" x="136" y="369" lefttop="rightbottom" rightbottom="rightbottom"/>
+        <Checkbox state="playlist.isLoop" up1="repeat1" up2="repeat-on" down1="repeat3" down2="repeat-on" over1="repeat2" over2="repeat-on" action1="playlist.setLoop(true)" action2="playlist.setLoop(false)" id="p5_pl" x="168" y="369" lefttop="rightbottom" rightbottom="rightbottom"/>
+        <Checkbox state="playlist.isRandom" up1="shuffle1" up2="shuffle-on" down1="shuffle3" down2="shuffle-on" over1="shuffle2" over2="shuffle-on" action1="playlist.setRandom(true)" action2="playlist.setRandom(false)" id="p6_pl" x="204" y="369" lefttop="rightbottom" rightbottom="rightbottom"/>
+        <Playtree id=" Playtree_pl" font="notosansreg" bgcolor1="#121212" bgcolor2="#121212" fgcolor="#dfdfdf" selcolor="#2f3949" playcolor="#8ab4f8" x="4" y="4" width="228" height="361" lefttop="righttop" rightbottom="rightbottom">
+          <Slider id="Slider_pl" x="234" y="14" points="(0,340),(0,0)" tooltiptext="" up="slider" down="slider" over="slider" lefttop="righttop" rightbottom="righttop"/>
+        </Playtree>
+      </Panel>
+      <Image id="BorderCenter_pl" x="479" image="border" lefttop="righttop" rightbottom="rightbottom"/>
+      <Image id="BorderTop_pl" image="border-top" rightbottom="righttop"/>
+      <Image id="BorderLeft_pl" image="border" rightbottom="leftbottom"/>
+      <Image id="BorderRight_pl" x="719" image="border" lefttop="righttop" rightbottom="rightbottom"/>
+      <Image id="resize_grip_pl" x="709" y="458" image="resize" action="resizeSE" lefttop="rightbottom" rightbottom="rightbottom" xkeepratio="true" ykeepratio="true" help="resize"/>
+    </Layout>
+    <Layout id="Main" width="720" height="469" maxwidth="9999" maxheight="9999">
+      <Image id="panel" y="405" image="bg-bottom" action="move" resize="scale" lefttop="leftbottom" rightbottom="rightbottom"/>
+      <Video id="video" width="720" height="405" rightbottom="rightbottom"/>
+      <Image id="background" image="bg-video-2" resize="scale" rightbottom="rightbottom"/>
+      <Text text="$N" font="roboto" alignment="center" color="#dfdfdf" id="Artist" x="124" y="47" width="472" rightbottom="righttop"/>
+      <Panel id="logo" x="124" y="113" width="472" height="200" rightbottom="rightbottom" xkeepratio="true" ykeepratio="true">
+        <Image id="LogoVLC" x="136" image="icon" art="true" action2="dialogs.fileInfo()" resize="scale2" rightbottom="rightbottom"/>
+      </Panel>
+      <Panel id="Bottom Left" y="405" width="108" height="64" rightbottom="leftbottom" xkeepratio="true" ykeepratio="true">
+        <Button up="prev" down="prev3" over="prev2" action="playlist.previous()" id="previous" x="4" y="16"/>
+        <Checkbox state="vlc.isPlaying" up1="play" up2="pause" down1="play3" down2="pause3" over1="play2" over2="pause2" action1="vlc.play()" action2="vlc.pause()" id="play/pause" x="40" y="16" xkeepratio="true" ykeepratio="true"/>
+        <Button up="next" down="next3" over="next2" action="playlist.next()" id="next" x="76" y="16"/>
+      </Panel>
+      <Panel id="Time Slider" x="115" y="405" width="362" height="64" lefttop="leftbottom" rightbottom="rightbottom" ykeepratio="true">
+        <Text text="$t" font="notosansreg" alignment="center" color="#FFFFFF" id="Current time" y="22" width="56" rightbottom="leftbottom" visible="vlc.isPlaying or vlc.hasAudio or vlc.hasVout"/>
+        <Slider id="Time slider" x="56" y="31" points="(0,2),(250,2)" thickness="0" value="time" tooltiptext="" up="positiongrip" down="positiongrip3" over="positiongrip2" rightbottom="rightbottom" ykeepratio="true">
+          <SliderBackground id="TimeSliderBackground" image="bg-time-slider" nbvert="250"/>
+        </Slider>
+        <Text text="$d" font="notosansreg" alignment="center" color="#FFFFFF" id="Total time" x="304" y="22" width="56" lefttop="righttop" rightbottom="rightbottom" visible="vlc.isPlaying or vlc.hasAudio or vlc.hasVout"/>
+      </Panel>
+      <Panel id="Bottom Right" x="480" y="405" width="240" height="64" lefttop="righttop" rightbottom="rightbottom" xkeepratio="true" ykeepratio="true">
+        <Checkbox state="vlc.isMute" up1="vol" up2="mute" down1="vol3" down2="mute3" over1="vol2" over2="mute2" action1="vlc.mute()" action2="vlc.mute()" id="Mute" x="4" y="16"/>
+        <Button up="playlist" down="playlist3" over="playlist2" action="Player.setLayout(Main_pl)" id="Playlist" x="36" y="16"/>
+        <Button up="fullscreen" down="fullscreen3" over="fullscreen2" action="vlc.fullscreen()" id="FullscreenButton" x="68" y="16"/>
+        <Button up="mins" down="mins3" over="mins2" action="vlc.minimize()" id="Mins" x="136" y="16"/>
+        <Checkbox state="Player.isMaximized" up1="max" up2="max" down1="max3" down2="max3" over1="max2" over2="max2" action1="Player.maximize()" action2="Player.unmaximize()" id="Maximize" x="168" y="16"/>
+        <Button up="close" down="close3" over="close2" action="vlc.quit()" id="Close" x="204" y="16"/>
+      </Panel>
+      <Image id="BorderTop" image="border-top" rightbottom="righttop"/>
+      <Image id="BorderLeft" image="border" rightbottom="leftbottom"/>
+      <Image id="BorderRight" x="719" image="border" lefttop="righttop" rightbottom="rightbottom"/>
+      <Image id="resize_grip" x="709" y="458" image="resize" action="resizeSE" lefttop="rightbottom" rightbottom="rightbottom" xkeepratio="true" ykeepratio="true" help="resize"/>
+    </Layout>
+  </Window>
+  <Window id="fullscreenController">
+    <Layout id="fswindow" width="720" height="64" maxwidth="9999" maxheight="9999">
+      <Image id="panel_fs" image="bg-fs" action="move" resize="scale" lefttop="leftbottom" rightbottom="rightbottom"/>
+      <Panel id="Bottom Left_fs" width="108" height="64" rightbottom="leftbottom" xkeepratio="true" ykeepratio="true">
+        <Button up="prev" down="prev3" over="prev2" action="playlist.previous()" id="previous_fs" x="4" y="16"/>
+        <Checkbox state="vlc.isPlaying" up1="play" up2="pause" down1="play3" down2="pause3" over1="play2" over2="pause2" action1="vlc.play()" action2="vlc.pause()" id="play/pause_fs" x="40" y="16" xkeepratio="true" ykeepratio="true"/>
+        <Button up="next" down="next3" over="next2" action="playlist.next()" id="next_fs" x="76" y="16"/>
+      </Panel>
+      <Panel id="Time Slider_fs" x="115" width="490" height="64" lefttop="leftbottom" rightbottom="rightbottom" ykeepratio="true">
+        <Text text="$t" font="notosansreg" alignment="center" color="#FFFFFF" id="Current time_fs" y="22" width="56" rightbottom="leftbottom" visible="vlc.isPlaying or vlc.hasAudio or vlc.hasVout"/>
+        <Slider id="Time slider_fs" x="56" y="31" points="(0,2),(370,2)" thickness="0" value="time" tooltiptext="" up="positiongrip" down="positiongrip3" over="positiongrip2" rightbottom="rightbottom" ykeepratio="true">
+          <SliderBackground id="TimeSliderBackground_fs" image="bg-time-slider-fs" nbvert="370"/>
+        </Slider>
+        <Text text="$d" font="notosansreg" alignment="center" color="#FFFFFF" id="Total time_fs" x="430" y="22" width="56" lefttop="righttop" rightbottom="rightbottom" visible="vlc.isPlaying or vlc.hasAudio or vlc.hasVout"/>
+      </Panel>
+      <Panel id="Bottom Right_fs" x="608" width="108" height="64" lefttop="righttop" rightbottom="rightbottom" xkeepratio="true" ykeepratio="true">
+        <Checkbox state="vlc.isMute" up1="vol" up2="mute" down1="vol3" down2="mute3" over1="vol2" over2="mute2" action1="vlc.mute()" action2="vlc.mute()" id="Mute_fs" x="4" y="16"/>
+        <Button up="restore" down="restore3" over="restore2" action="vlc.fullscreen()" id="FullscreenButton_fs" x="40" y="16"/>
+        <Button up="close" down="close3" over="close2" action="vlc.quit()" id="Close_fs" x="76" y="16"/>
+      </Panel>
+    </Layout>
+  </Window>
+
+</Theme>
