@@ -2,7 +2,7 @@
 <Theme version="2.0">
   <ThemeInfo name="Materia" author="Alexey Varfolomeev" email="varlesh@gmail.com" webpage="https://github.com/varlesh"/>
 
-  <!-- Created using the VLC Skin Editor 0.8.6.dev (http://www.videolan.org/vlc/skineditor.html)-->
+  <!-- Created using the VLC Skin Editor 0.8.5.dev (http://www.videolan.org/vlc/skineditor.html)-->
 
   <Bitmap id="play" file="play.png" alphacolor="#FF00FF"/>
   <Bitmap id="pause" file="pause.png" alphacolor="#FF00FF"/>
@@ -85,27 +85,27 @@
   <Bitmap id="bg-time-slider-fs" file="bg-time-slider-fs.png" alphacolor="#FF00FF"/>
 
   <Window id="Player">
-    <Layout id="Main_pl" width="720" height="469" maxwidth="9999" maxheight="9999">
-      <Image id="panel_pl" y="405" image="bg-bottom" action="move" resize="scale" lefttop="leftbottom" rightbottom="rightbottom"/>
-      <Video id="video_pl" width="480" height="405" rightbottom="rightbottom"/>
-      <Image id="background_pl" image="bg-video" resize="scale" rightbottom="rightbottom"/>
-      <Text text="$N" font="roboto" alignment="center" color="#dfdfdf" id="Artist_pl" x="4" y="47" width="472" rightbottom="righttop"/>
-      <Panel id="logo_pl" x="4" y="113" width="472" height="200" rightbottom="rightbottom" ykeepratio="true">
-        <Image id="LogoVLC_pl" x="136" image="icon" art="true" action2="dialogs.fileInfo()" resize="scale2" rightbottom="rightbottom"/>
+    <Layout id="Main_pl" width="720" height="360" maxwidth="9999" maxheight="9999">
+      <Image id="panel_pl" y="296" image="bg-bottom" action="move" resize="scale" lefttop="leftbottom" rightbottom="rightbottom"/>
+      <Video id="video_pl" width="480" height="296" rightbottom="rightbottom"/>
+      <Image id="background_pl" image="bg-video" action="move" resize="scale" rightbottom="rightbottom"/>
+      <Text text="$N" font="roboto" alignment="center" color="#dfdfdf" id="Artist_pl" x="4" y="30" width="472" rightbottom="righttop"/>
+      <Panel id="logo_pl" y="76" width="480" height="192" rightbottom="rightbottom" ykeepratio="true">
+        <Image id="LogoVLC_pl" x="144" image="icon" art="true" action2="dialogs.fileInfo()" resize="scale2" rightbottom="rightbottom"/>
       </Panel>
-      <Panel id="Bottom Left_pl" y="405" width="108" height="64" rightbottom="leftbottom" xkeepratio="true" ykeepratio="true">
+      <Panel id="Bottom Left_pl" y="296" width="108" height="64" rightbottom="leftbottom" xkeepratio="true" ykeepratio="true">
         <Button up="prev" down="prev3" over="prev2" action="playlist.previous()" id="previous_pl" x="4" y="16"/>
         <Checkbox state="vlc.isPlaying" up1="play" up2="pause" down1="play3" down2="pause3" over1="play2" over2="pause2" action1="vlc.play()" action2="vlc.pause()" id="play/pause_pl" x="40" y="16" xkeepratio="true" ykeepratio="true"/>
         <Button up="next" down="next3" over="next2" action="playlist.next()" id="next_pl" x="76" y="16"/>
       </Panel>
-      <Panel id="Time Slider_pl" x="115" y="405" width="362" height="64" lefttop="leftbottom" rightbottom="rightbottom" ykeepratio="true">
+      <Panel id="Time Slider_pl" x="115" y="296" width="362" height="64" lefttop="leftbottom" rightbottom="rightbottom" ykeepratio="true">
         <Text text="$t" font="notosansreg" alignment="center" color="#FFFFFF" id="Current time_pl" y="22" width="56" rightbottom="leftbottom" visible="vlc.isPlaying or vlc.hasAudio or vlc.hasVout"/>
         <Slider id="Time slider_pl" x="56" y="31" points="(0,2),(250,2)" thickness="0" value="time" tooltiptext="" up="positiongrip" down="positiongrip3" over="positiongrip2" rightbottom="rightbottom" ykeepratio="true">
           <SliderBackground id="TimeSliderBackground_pl" image="bg-time-slider" nbvert="250"/>
         </Slider>
         <Text text="$d" font="notosansreg" alignment="center" color="#FFFFFF" id="Total time_pl" x="304" y="22" width="56" lefttop="righttop" rightbottom="rightbottom" visible="vlc.isPlaying or vlc.hasAudio or vlc.hasVout"/>
       </Panel>
-      <Panel id="Bottom Right_pl" x="480" y="405" width="240" height="64" lefttop="righttop" rightbottom="rightbottom" xkeepratio="true" ykeepratio="true">
+      <Panel id="Bottom Right_pl" x="480" y="296" width="240" height="64" lefttop="righttop" rightbottom="rightbottom" xkeepratio="true" ykeepratio="true">
         <Checkbox state="vlc.isMute" up1="vol" up2="mute" down1="vol3" down2="mute3" over1="vol2" over2="mute2" action1="vlc.mute()" action2="vlc.mute()" id="Mute_pl" x="4" y="16"/>
         <Button up="playlist" down="playlist3" over="playlist2" action="Player.setLayout(Main)" id="Playlist_pl" x="40" y="16"/>
         <Button up="fullscreen" down="fullscreen3" over="fullscreen2" action="vlc.fullscreen()" id="FullscreenButton_pl" x="76" y="16"/>
@@ -114,45 +114,45 @@
         <Button up="max" down="max3" over="max2" action="Player.unmaximize()" id="Unmax_pl" x="168" y="16" visible="Player.isMaximized()"/>
         <Button up="close" down="close3" over="close2" action="vlc.quit()" id="Close_pl" x="204" y="16"/>
       </Panel>
-      <Panel id="PlaylistPanel_pl" x="480" width="240" height="405" lefttop="righttop" rightbottom="rightbottom">
+      <Panel id="PlaylistPanel_pl" x="480" width="240" height="296" lefttop="righttop" rightbottom="rightbottom">
         <Image id="PlaylistBackground_pl" image="bg-playlist" lefttop="righttop" rightbottom="rightbottom"/>
-        <Button up="plus1" down="plus3" over="plus2" action="playlist.add()" id="p1_pl" x="4" y="369" lefttop="rightbottom" rightbottom="rightbottom"/>
-        <Button up="minus1" down="minus3" over="minus2" action="playlist.del()" id="p2_pl" x="40" y="369" lefttop="rightbottom" rightbottom="rightbottom"/>
-        <Button up="up1" down="up3" over="up2" action="playlist.load()" id="p3_pl" x="76" y="369" lefttop="rightbottom" rightbottom="rightbottom"/>
-        <Button up="down1" down="down3" over="down2" action="playlist.save()" id="p4_pl" x="132" y="369" lefttop="rightbottom" rightbottom="rightbottom"/>
-        <Checkbox state="playlist.isLoop" up1="repeat1" up2="repeat-on" down1="repeat3" down2="repeat-on" over1="repeat2" over2="repeat-on" action1="playlist.setLoop(true)" action2="playlist.setLoop(false)" id="p5_pl" x="168" y="369" lefttop="rightbottom" rightbottom="rightbottom"/>
-        <Checkbox state="playlist.isRandom" up1="shuffle1" up2="shuffle-on" down1="shuffle3" down2="shuffle-on" over1="shuffle2" over2="shuffle-on" action1="playlist.setRandom(true)" action2="playlist.setRandom(false)" id="p6_pl" x="204" y="369" lefttop="rightbottom" rightbottom="rightbottom"/>
-        <Playtree id=" Playtree_pl" font="notosansreg" bgcolor1="#121212" bgcolor2="#121212" fgcolor="#dfdfdf" selcolor="#2f3949" playcolor="#8ab4f8" x="4" y="4" width="228" height="361" lefttop="righttop" rightbottom="rightbottom">
-          <Slider id="Slider_pl" x="234" y="14" points="(0,340),(0,0)" tooltiptext="" up="slider" down="slider" over="slider" lefttop="righttop" rightbottom="righttop"/>
+        <Button up="plus1" down="plus3" over="plus2" action="playlist.add()" id="p1_pl" x="4" y="261" lefttop="rightbottom" rightbottom="rightbottom"/>
+        <Button up="minus1" down="minus3" over="minus2" action="playlist.del()" id="p2_pl" x="40" y="261" lefttop="rightbottom" rightbottom="rightbottom"/>
+        <Button up="up1" down="up3" over="up2" action="playlist.load()" id="p3_pl" x="76" y="261" lefttop="rightbottom" rightbottom="rightbottom"/>
+        <Button up="down1" down="down3" over="down2" action="playlist.save()" id="p4_pl" x="132" y="261" lefttop="rightbottom" rightbottom="rightbottom"/>
+        <Checkbox state="playlist.isLoop" up1="repeat1" up2="repeat-on" down1="repeat3" down2="repeat-on" over1="repeat2" over2="repeat-on" action1="playlist.setLoop(true)" action2="playlist.setLoop(false)" id="p5_pl" x="168" y="261" lefttop="rightbottom" rightbottom="rightbottom"/>
+        <Checkbox state="playlist.isRandom" up1="shuffle1" up2="shuffle-on" down1="shuffle3" down2="shuffle-on" over1="shuffle2" over2="shuffle-on" action1="playlist.setRandom(true)" action2="playlist.setRandom(false)" id="p6_pl" x="204" y="261" lefttop="rightbottom" rightbottom="rightbottom"/>
+        <Playtree id=" Playtree_pl" font="notosansreg" bgcolor1="#121212" bgcolor2="#121212" fgcolor="#dfdfdf" selcolor="#2f3949" playcolor="#8ab4f8" x="4" y="4" width="228" height="252" lefttop="righttop" rightbottom="rightbottom">
+          <Slider id="Slider_pl" x="234" y="14" points="(0,231),(0,0)" tooltiptext="" up="slider" down="slider" over="slider" lefttop="righttop" rightbottom="righttop"/>
         </Playtree>
       </Panel>
-      <Image id="BorderCenter_pl" x="479" image="border" lefttop="righttop" rightbottom="rightbottom"/>
+      <Image id="BorderCenter_pl" x="480" image="border" lefttop="righttop" rightbottom="rightbottom"/>
       <Image id="BorderTop_pl" image="border-top" rightbottom="righttop"/>
       <Image id="BorderLeft_pl" image="border" rightbottom="leftbottom"/>
       <Image id="BorderRight_pl" x="719" image="border" lefttop="righttop" rightbottom="rightbottom"/>
-      <Image id="resize_grip_pl" x="709" y="458" image="resize" action="resizeSE" lefttop="rightbottom" rightbottom="rightbottom" xkeepratio="true" ykeepratio="true" help="resize"/>
+      <Image id="resize_grip_pl" x="709" y="349" image="resize" action="resizeSE" lefttop="rightbottom" rightbottom="rightbottom" xkeepratio="true" ykeepratio="true" help="resize"/>
     </Layout>
-    <Layout id="Main" width="720" height="469" maxwidth="9999" maxheight="9999">
-      <Image id="panel" y="405" image="bg-bottom" action="move" resize="scale" lefttop="leftbottom" rightbottom="rightbottom"/>
-      <Video id="video" width="720" height="405" rightbottom="rightbottom"/>
-      <Image id="background" image="bg-video-2" resize="scale" rightbottom="rightbottom"/>
-      <Text text="$N" font="roboto" alignment="center" color="#dfdfdf" id="Artist" x="124" y="47" width="472" rightbottom="righttop"/>
-      <Panel id="logo" x="124" y="113" width="472" height="200" rightbottom="rightbottom" xkeepratio="true" ykeepratio="true">
-        <Image id="LogoVLC" x="136" image="icon" art="true" action2="dialogs.fileInfo()" resize="scale2" rightbottom="rightbottom"/>
+    <Layout id="Main" width="720" height="360" maxwidth="9999" maxheight="9999">
+      <Image id="panel" y="296" image="bg-bottom" action="move" resize="scale" lefttop="leftbottom" rightbottom="rightbottom"/>
+      <Video id="video" width="720" height="296" rightbottom="rightbottom"/>
+      <Image id="background" image="bg-video-2" action="move" resize="scale" rightbottom="rightbottom"/>
+      <Text text="$N" font="roboto" alignment="center" color="#dfdfdf" id="Artist" x="120" y="30" width="472" rightbottom="righttop"/>
+      <Panel id="logo" y="76" width="720" height="192" rightbottom="rightbottom" xkeepratio="true" ykeepratio="true">
+        <Image id="LogoVLC" x="264" image="icon" art="true" action2="dialogs.fileInfo()" resize="scale2" rightbottom="rightbottom"/>
       </Panel>
-      <Panel id="Bottom Left" y="405" width="108" height="64" rightbottom="leftbottom" xkeepratio="true" ykeepratio="true">
+      <Panel id="Bottom Left" y="296" width="108" height="64" rightbottom="leftbottom" xkeepratio="true" ykeepratio="true">
         <Button up="prev" down="prev3" over="prev2" action="playlist.previous()" id="previous" x="4" y="16"/>
         <Checkbox state="vlc.isPlaying" up1="play" up2="pause" down1="play3" down2="pause3" over1="play2" over2="pause2" action1="vlc.play()" action2="vlc.pause()" id="play/pause" x="40" y="16" xkeepratio="true" ykeepratio="true"/>
         <Button up="next" down="next3" over="next2" action="playlist.next()" id="next" x="76" y="16"/>
       </Panel>
-      <Panel id="Time Slider" x="115" y="405" width="362" height="64" lefttop="leftbottom" rightbottom="rightbottom" ykeepratio="true">
+      <Panel id="Time Slider" x="115" y="296" width="362" height="64" lefttop="leftbottom" rightbottom="rightbottom" ykeepratio="true">
         <Text text="$t" font="notosansreg" alignment="center" color="#FFFFFF" id="Current time" y="22" width="56" rightbottom="leftbottom" visible="vlc.isPlaying or vlc.hasAudio or vlc.hasVout"/>
         <Slider id="Time slider" x="56" y="31" points="(0,2),(250,2)" thickness="0" value="time" tooltiptext="" up="positiongrip" down="positiongrip3" over="positiongrip2" rightbottom="rightbottom" ykeepratio="true">
           <SliderBackground id="TimeSliderBackground" image="bg-time-slider" nbvert="250"/>
         </Slider>
         <Text text="$d" font="notosansreg" alignment="center" color="#FFFFFF" id="Total time" x="304" y="22" width="56" lefttop="righttop" rightbottom="rightbottom" visible="vlc.isPlaying or vlc.hasAudio or vlc.hasVout"/>
       </Panel>
-      <Panel id="Bottom Right" x="480" y="405" width="240" height="64" lefttop="righttop" rightbottom="rightbottom" xkeepratio="true" ykeepratio="true">
+      <Panel id="Bottom Right" x="480" y="296" width="240" height="64" lefttop="righttop" rightbottom="rightbottom" xkeepratio="true" ykeepratio="true">
         <Checkbox state="vlc.isMute" up1="vol" up2="mute" down1="vol3" down2="mute3" over1="vol2" over2="mute2" action1="vlc.mute()" action2="vlc.mute()" id="Mute" x="4" y="16"/>
         <Button up="playlist" down="playlist3" over="playlist2" action="Player.setLayout(Main_pl)" id="Playlist" x="40" y="16"/>
         <Button up="fullscreen" down="fullscreen3" over="fullscreen2" action="vlc.fullscreen()" id="FullscreenButton" x="76" y="16"/>
@@ -164,7 +164,7 @@
       <Image id="BorderTop" image="border-top" rightbottom="righttop"/>
       <Image id="BorderLeft" image="border" rightbottom="leftbottom"/>
       <Image id="BorderRight" x="719" image="border" lefttop="righttop" rightbottom="rightbottom"/>
-      <Image id="resize_grip" x="709" y="458" image="resize" action="resizeSE" lefttop="rightbottom" rightbottom="rightbottom" xkeepratio="true" ykeepratio="true" help="resize"/>
+      <Image id="resize_grip" x="709" y="349" image="resize" action="resizeSE" lefttop="rightbottom" rightbottom="rightbottom" xkeepratio="true" ykeepratio="true" help="resize"/>
     </Layout>
   </Window>
   <Window id="fullscreenController">

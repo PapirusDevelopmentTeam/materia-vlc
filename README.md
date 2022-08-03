@@ -25,4 +25,3 @@ https://www.pling.com/p/1580017/
 Clone repo. Download [VLC Skin Editor](https://www.videolan.org/vlc/skineditor.html) and open **theme.xml** from skin folder. On menu click **Export as VLT**.
 
 ## Donate
-If you want to support development, consider donating via [PayPal](https://paypal.me/varlesh).
