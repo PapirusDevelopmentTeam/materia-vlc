@@ -20,7 +20,13 @@
 
 https://www.pling.com/p/1580017/
 
-## Build
+### Arch Linux Installation
+
+```
+yay -S vlc-materia-skin-git
+```
+
+### Build
 
 Clone repo. Download [VLC Skin Editor](https://www.videolan.org/vlc/skineditor.html) and open **theme.xml** from skin folder. On menu click **Export as VLT**.
 
